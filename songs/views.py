@@ -12,5 +12,8 @@ class SongView(generics.ListCreateAPIView):
     queryset = Song.objects.all()
     serializer_class = SongSerializer
 
+    def get_queryset(self):
+        return self.queryset.filter(album_id=self.kwargs.get('album_id'))
+
     def perform_create(self, serializer):
         return serializer.save(album_id=self.kwargs.get('album_id'))
