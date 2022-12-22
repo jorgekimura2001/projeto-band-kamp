@@ -1,4 +1,4 @@
-# M5 - BandKamp Generic View
+# Projeto BandKamp em Generic View
 
 ## Instalação dos pacotes de teste
 
@@ -68,4 +68,12 @@ pytest --testdox -vvs tests/albums/
 - Rodando testes de songs:
 ```python
 pytest --testdox -vvs tests/songs/
+```
+
+## Links da aplicação:
+```
+Deploy: https://band-kamp.onrender.com/
+```
+```
+Documentação com as rotas: https://band-kamp.onrender.com/api/docs/swagger-ui/
 ```
